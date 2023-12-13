@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream land</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: url(fu.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .dreams {
+            width: 420px;
+            background-color: transparent;
+            border: 2px solid rgba(255,255,255,.2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px (0,0,0,rgba(255,255,255,.2));
+            color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+
+        .dreams h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .dreams .input-box {
+            position: relative;
+            width: 100;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            border: 2px solid grey;
+            border-radius: 40px;
+            background: transparent;
+            font-size: 17px;
+            color: #fff;
+            padding:20px 45px 20px 20px ;
+        }
+        .input-box input::placeholder{
+            color: white;
+        }
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+        }
+        .dreams .remember_forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 10px 15px;
+        }
+        .remember_forgot label input{
+            color: #fff;
+            margin-right: 4px;
+        }
+        .remember_forgot a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .remember_forgot a:hover{
+            color: rgb(86, 86, 167);
+            text-decoration: underline;
+        }
+        .dreams .btn{
+            width: 100%;
+            height: 50px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 45px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+        .dreams .register-link{
+            font-size: 14.5px;
+            text-decoration: none;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .register-link p a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: 300;
+        }
+        .register-link p a:hover{
+            text-decoration: underline;
+            color: rgb(65, 65, 167);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="dreams">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <!-- <box-icon name='user'></box-icon> -->
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="remember_forgot">
+                <label for="">
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#">Forgot password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
